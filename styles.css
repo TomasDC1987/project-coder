@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* FONDO GENERAL */
+}
+
+.bodycanje {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2; /* FONDO GENERAL */
+        background-image: url(images/fondoPlanCanje.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+/* ----------------- HEADER Y NAV -------------------*/
+header {
+    background-color: #0e0e0e; /* Rosa para combinar con "Go" */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px; 
+}
+
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e055a1; 
+}
+
+nav ul li a.active {
+    color: #e055a1; 
+    font-weight: bold; 
+}
+
+/* ----------------- TERMINA HEADER Y NAV -------------------*/
+
+/* ----------------- CONTENT MAIN INDEX -------------------*/
+
+.maincontent 
+{   
+    display: grid;
+    height: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 1.6fr;
+    grid-template-areas: 'arriba arriba'
+                         'medio medio'
+                         'izquierda derecha';
+}
+
+
+.welcome {
+    background-color:  #333333;
+    grid-area: arriba;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus {
+    background-color: #f2f2f2;
+    grid-area: medio;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    font-size: 15px;
+}
+
+.leftside {
+    background-color: #FF69B4;
+    grid-area: izquierda;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    line-height: 35px;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.rightside {
+    background-color: darkgray;
+    grid-area: derecha;
+    display: flex;
+    background-image: url(images/plancanje1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 20px;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: flex-end;
+    background-position: top;
+    padding-bottom: 25px;
+}
+
+.maintitle {
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.mainsubt {
+    color: #f2f2f2;
+}
+/* ----------------- TERMINA CONTENT MAIN INDEX -------------------*/
+
+/* Contenedor del Formulario */
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2, h1 .go {
+    color: #FF69B4; 
+}
+
+/* Grupos de Formulario */
+.form-group {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.status-section {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select, input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FF69B4; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e055a1; 
+}
+
+.comingsoon {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+
+}
+
+
+footer {
+    background-color: #000000; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 19px 0; 
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; 
+}
+
+footer p {
+    margin: 0; 
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    
+    .maincontent {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: minmax(200px, auto) minmax(150px, auto) minmax(200px, auto) minmax(200px, auto); /* Alturas mínimas para cada fila */
+        gap: 20px; 
+        height: auto; 
+    }
+
+    
+    .welcome {
+        grid-column: 1 / 2; 
+        grid-row: 1; 
+        text-align: center;
+        min-height: 200px; 
+    }
+
+    .aboutus {
+        grid-column: 1 / 2; 
+        grid-row: 2; 
+        font-size: 14px; 
+        padding: 0 20px;
+        min-height: 150px; 
+    }
+
+    .leftside {
+        grid-column: 1 / 2; 
+        grid-row: 3; 
+        padding: 15px; 
+        text-align: center;
+        line-height: 25px; 
+        min-height: 200px; 
+    }
+
+    .rightside {
+        grid-column: 1 / 2; 
+        grid-row: 4; 
+        background-image: url(images/plancanje1.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+        min-height: 200px; 
+
+    
+    .leftside img, .rightside img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    
+    .maintitle {
+        font-size: 35px;
+    }
+
+    .mainsubt {
+        font-size: 18px;
+    }
+}

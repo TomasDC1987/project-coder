@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Intercambio GoFix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bodycanje">
+
+
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo GoFix">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="franquicias.html">Franquicias</a></li>
+                <li><a href="plancanje.html" class="active">Plan Canje</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN DE HEADER -->
+
+
+
+    <!-- Contenedor del Formulario -->
+    <div class="container">
+        <h2>Programa de Intercambio de Dispositivos <span class="go">Go</span>Fix</h2>
+        <form>
+
+            <!-- Selección de Marca -->
+            <div class="form-group">
+                <label>Seleccione la Marca:</label>
+                <select>
+                    <option value="">-- Seleccione la Marca --</option>
+                    <option value="apple">Apple</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="motorola">Motorola</option>
+                </select>
+            </div>
+            
+            <!-- Selección de Modelo -->
+            <div class="form-group">
+                <label for="model">Seleccione el Modelo:</label>
+                <select id="model" name="model" required>
+                    <option value="">-- Seleccione el Modelo --</option>
+                    <!-- Modelos de Apple -->
+                    <option value="iphone11" data-brand="apple">iPhone 11</option>
+                    <option value="iphone12" data-brand="apple">iPhone 12</option>
+                    <option value="iphone12pro" data-brand="apple">iPhone 12 Pro</option>
+                    <option value="iphone12promax" data-brand="apple">iPhone 12 Pro Max</option>
+                    <option value="iphone13" data-brand="apple">iPhone 13</option>
+                    
+                    <!-- Modelos de Samsung -->
+                    <option value="s22" data-brand="samsung">Samsung Galaxy S22</option>
+                    <option value="s21" data-brand="samsung">Samsung Galaxy S21</option>
+    
+                    <!-- Modelos de Motorola -->
+                    <option value="g211" data-brand="motorola">Moto G211</option>
+                    <option value="g411" data-brand="motorola">Moto G411</option>
+                    <option value="g611" data-brand="motorola">Moto G611</option>
+                </select>
+            </div>
+            
+            <!-- Sección de Estado del Dispositivo -->
+            <div class="status-section">
+                <div class="form-group">
+                    <label>¿El dispositivo enciende y apaga normalmente?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="powerCondition" value="si" required> Sí</label>
+                        <label><input type="radio" name="powerCondition" value="no"> No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Es el IMEI legible?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="imeiLegibility" value="si" required> Sí</label>
+                        <label><input type="radio" name="imeiLegibility" value="no"> No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Estado de la Pantalla:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="screenCondition" value="buena" required> Buena</label>
+                        <label><input type="radio" name="screenCondition" value="marcas"> Con Marcas</label>
+                        <label><input type="radio" name="screenCondition" value="rota"> Rota</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Estado de la Carcasa:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="shellCondition" value="buena" required> Buena</label>
+                        <label><input type="radio" name="shellCondition" value="usada"> Usada</label>
+                        <label><input type="radio" name="shellCondition" value="dañada"> Dañada</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Funcionan todos los botones?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="buttonsWorking" value="si" required> Sí</label>
+                        <label><input type="radio" name="buttonsWorking" value="no"> No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Funciona el Touch de la Pantalla?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="touchWorking" value="si" required> Sí</label>
+                        <label><input type="radio" name="touchWorking" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Cotizar equipo</button>
+        </form>
+    </div>
+<!-- FOOTER -->
+    <footer>
+    <p>&copy; 2024 GoFix - Todos los derechos reservados.</p>
+    </footer>
+<!-- FIN DE FOOTER -->
+    </body>
+</html>
+
