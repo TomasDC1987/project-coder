@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* FONDO GENERAL */
+}
+
+.bodycanje {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2; /* FONDO GENERAL */
+        background-image: url(images/fondoPlanCanje.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}

@@ -1,0 +1,76 @@
+/* ----------------- CONTENT MAIN INDEX -------------------*/
+
+.maincontent 
+{   
+    display: grid;
+    height: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 1.6fr;
+    grid-template-areas: 'arriba arriba'
+                         'medio medio'
+                         'izquierda derecha';
+}
+
+
+.welcome {
+    background-color:  #333333;
+    grid-area: arriba;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus {
+    background-color: #f2f2f2;
+    grid-area: medio;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    font-size: 15px;
+}
+
+.leftside {
+    background-color: #FF69B4;
+    grid-area: izquierda;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    line-height: 35px;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.rightside {
+    background-color: darkgray;
+    grid-area: derecha;
+    display: flex;
+    background-image: url(images/plancanje1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 20px;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: flex-end;
+    background-position: top;
+    padding-bottom: 25px;
+}
+
+.maintitle {
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.mainsubt {
+    color: #f2f2f2;
+}
+/* ----------------- TERMINA CONTENT MAIN INDEX -------------------*/

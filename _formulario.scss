@@ -1,0 +1,90 @@
+/* Contenedor del Formulario */
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2, h1 .go {
+    color: #FF69B4; 
+}
+
+/* Grupos de Formulario */
+.form-group {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.status-section {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select, input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FF69B4; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e055a1; 
+}
+
+.comingsoon {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+
+}

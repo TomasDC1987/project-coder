@@ -1,0 +1,65 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    
+    .maincontent {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: minmax(200px, auto) minmax(150px, auto) minmax(200px, auto) minmax(200px, auto); /* Alturas mínimas para cada fila */
+        gap: 20px; 
+        height: auto; 
+    }
+
+    
+    .welcome {
+        grid-column: 1 / 2; 
+        grid-row: 1; 
+        text-align: center;
+        min-height: 200px; 
+    }
+
+    .aboutus {
+        grid-column: 1 / 2; 
+        grid-row: 2; 
+        font-size: 14px; 
+        padding: 0 20px;
+        min-height: 150px; 
+    }
+
+    .leftside {
+        grid-column: 1 / 2; 
+        grid-row: 3; 
+        padding: 15px; 
+        text-align: center;
+        line-height: 25px; 
+        min-height: 200px; 
+    }
+
+    .rightside {
+        grid-column: 1 / 2; 
+        grid-row: 4; 
+        background-image: url(images/plancanje1.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+        min-height: 200px; 
+
+    
+    .leftside img, .rightside img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    
+    .maintitle {
+        font-size: 35px;
+    }
+
+    .mainsubt {
+        font-size: 18px;
+    }
+}
+}
