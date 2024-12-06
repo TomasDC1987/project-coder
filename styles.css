@@ -250,8 +250,8 @@ button:hover {
   .rightside {
     grid-column: 1/2;
     grid-row: 4;
-    background-image: url(images/plancanje1.jpg);
     background-size: cover;
+    background-image: none;
     background-position: center;
     padding: 20px;
     text-align: center;
@@ -291,6 +291,82 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/* ----------------- FRANCHISE CONTENT ------------------- */
+.franchise-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.franchise-header {
+  grid-column: span 2;
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.franchise-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.franchise-header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.franchise-details {
+  grid-column: span 2;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.franchise-benefits,
+.franchise-requirements {
+  margin-bottom: 20px;
+}
+
+.franchise-benefits h2,
+.franchise-requirements h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0e0e0e;
+}
+
+.franchise-benefits ul,
+.franchise-requirements ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.franchise-contact {
+  grid-column: span 2;
+  background-color: #FF69B4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.franchise-contact h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.franchise-contact a {
+  color: #f2f2f2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.franchise-contact a:hover {
+  color: #e055a1;
 }
 
 /*# sourceMappingURL=styles.css.map */
